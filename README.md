@@ -1,0 +1,18 @@
+部署时，更改vercel.json
+{
+  "functions": {
+    "api/**/*.mjs": {
+      "runtime": "@vercel/node@3.0.20"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.45"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1f2937" opacity="0.06" />
+    </pattern>
+    <radialGradient id="hl" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 100) rotate(90) scale(220)">
+      <stop stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="540" fill="url(#g1)"/>
+  <rect width="1200" height="540" fill="url(#grid)" opacity="0.7"/>
+
+  <!-- layered blobs -->
+  <circle cx="240" cy="340" r="240" fill="url(#g2)"/>
+  <circle cx="920" cy="160" r="190" fill="url(#g2)"/>
+  <circle cx="640" cy="360" r="160" fill="url(#g3)"/>
+  <circle cx="1040" cy="420" r="120" fill="url(#g3)"/>
+
+  <!-- soft waves -->
+  <g opacity="0.18">
+    <path d="M0 410 C 260 360, 820 520, 1200 440 L1200 540 L0 540 Z" fill="#1f2937"/>
+  </g>
+  <path d="M0 420 C 280 370, 760 500, 1200 460" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M0 446 C 240 400, 800 520, 1200 490" stroke="#6366f1" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- highlight -->
+  <circle cx="960" cy="100" r="220" fill="url(#hl)"/>
+</svg>
